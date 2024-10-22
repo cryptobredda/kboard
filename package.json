@@ -1,0 +1,21 @@
+{
+    "name": "kboard",
+    "description": "",
+    "version": "0.0.1",
+    "author": "",
+    "license": "MIT",
+    "private": true,
+    "homepage": "",
+    "repository": "",
+    "bugs": "",
+    "scripts": {
+        "ergogen:build": "ergogen --clean -o ergogen/output ergogen",
+        "ergogen:watch": "nodemon --ext .js,.yaml --watch ergogen/footprints --watch ergogen/config.yaml --exec npm run ergogen:build"
+    },
+    "dependencies": {
+        "ergogen": "^4.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.21"
+    }
+}
